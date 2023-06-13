@@ -1,0 +1,5 @@
+composer require "darryldecode/cart"
+php artisan make:model Product -m
+php artisan make:seed ProductsTableSeeder
+php artisan migrate --seed
+php artisan make:controller CartController
